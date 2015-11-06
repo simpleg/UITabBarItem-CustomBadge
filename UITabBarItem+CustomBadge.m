@@ -60,10 +60,12 @@
             
             l.layer.cornerRadius = l.frame.size.height/2;
             l.layer.masksToBounds = YES;
+            l.layer.borderWidth = 3.0f;
+            l.layer.borderColor = [UIColor whiteColor].CGColor;
             
             // Fix for border
             sv.layer.borderWidth = 1;
-            sv.layer.borderColor = [backColor CGColor];
+            sv.layer.borderColor = [[UIColor whiteColor] CGColor];
             sv.layer.cornerRadius = sv.frame.size.height/2;
             sv.layer.masksToBounds = YES;
             
